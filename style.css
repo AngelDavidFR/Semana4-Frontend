@@ -1,0 +1,563 @@
+:root {
+    --colora: rgb(0, 0, 0);
+    --colorb: rgb(255, 0, 0);
+    --colorbg: rgb(138, 138, 138);
+    --tipo1: "none";
+    --tipo2: "none";
+    --typeColor1: blue;
+    --typeColor11: black;
+    --typeColor2: blue;
+    --typeColor21: black;
+    --habContent: "";
+    --xpContent: "";
+    --altura1: "";
+    --peso1: "";
+    --id: "";
+    --imgScale: 0.8;
+    --habit: "";
+    --fcolor: black;
+  }
+  body {
+    background-color: black;
+    background-image: radial-gradient(
+        white,
+        rgba(255, 255, 255, 0.2) 2px,
+        transparent 40px
+      ),
+      radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+      radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+      radial-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.1) 2px,
+        transparent 30px
+      );
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  
+  /* -------------------------------------Contenedor main------------------------------- */
+  .pokeContenedor2 {
+    position: absolute;
+    width: 900px;
+    height: auto;
+    min-height: 650px;
+    background-image: url(./assets/images/kanto_pokedex.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    user-select: none;
+  }
+  
+  /*------------------------------------------------------------------------------------*/
+  
+  /* -----------------------Caratula ---------------------------------------*/
+  
+  /* Tem4 */
+  
+  .carat1 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-items: center;
+    justify-content: center center;
+  }
+  .carat1 h3 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .carat1 p {
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  #altura {
+    position: absolute;
+    top: 543px;
+    left: 542px;
+    height: 30px;
+    width: auto;
+  }
+  #peso {
+    position: absolute;
+    top: 543px;
+    left: 700px;
+    height: 30px;
+    width: auto;
+  }
+  #altura2::after {
+    content: var(--altura1);
+  }
+  #peso2::after {
+    content: var(--peso1);
+  }
+  .lamp img {
+    width: auto;
+    height: 130px;
+    position: relative;
+    top: 39%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .lamp {
+    width: 277px;
+    height: 182px;
+    position: absolute;
+    top: 194px;
+    left: 98px;
+    border-radius: 11px;
+    background-color: white;
+    background: radial-gradient(var(--colora) 30%, transparent 16%) 0 0,
+      radial-gradient(var(--colorb) 30%, transparent 16%) 8px 8px,
+      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+      radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+    background-color: var(--colorbg);
+    background-size: 16px 16px;
+  }
+  
+  .id1 {
+    position: absolute;
+    width: 350px;
+    top: 145px;
+    left: calc(50% - 97px);
+    height: 25px;
+    color: black;
+  }
+  .id1 p {
+    position: relative;
+    width: 100%;
+    left: calc(50% - 170px);
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+  }
+  .id1 p::after {
+    content: var(--id);
+  }
+  
+  /* ------------------------------------------------------------------------------------- */
+  
+  /*---------------------- Contentedor de Información----------------------- */
+  .contentInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 281px;
+    height: 130px;
+    top: 194px;
+    left: 536px;
+    border-radius: 8px;
+  }
+  
+  /* Tem1 */
+  .grafico1 {
+    width: 264px;
+    height: 78px;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  /* Tem2 */
+  .datos {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    font-family: calibri;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 0;
+    column-gap: 15px;
+    row-gap: 9px;
+    justify-content: center;
+  }
+  .datos2 {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .datos .datos2 p {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+  }
+  .datos h3 {
+    color: yellow;
+    padding: 0;
+    margin: 0;
+    font-size: 0.96em;
+  }
+  .datos p {
+    color: white;
+    padding: 0;
+    margin: 3px;
+    font-size: 0.96em;
+    text-align: center;
+    user-select: none;
+  }
+  
+  #type1::after {
+    content: var(--tipo1);
+    color: var(--typeColor1);
+    background-color: var(--typeColor11);
+    background-position: center center;
+    text-align: center;
+    padding: 4px;
+  }
+  #type2::after {
+    content: var(--tipo2);
+    color: var(--typeColor2);
+    background-color: var(--typeColor21);
+    background-position: center center;
+    text-align: center;
+    padding: 4px;
+  }
+  
+  #hab::after {
+    content: var(--habContent);
+  }
+  #xp::after {
+    content: var(--xpContent);
+  }
+  #habt::after {
+    content: var(--habit);
+  }
+  
+  /* Tem3 */
+  #searchPoke {
+    position: relative;
+    top: calc(50% - 32px);
+    left: calc(50% - 106px);
+    width: 208px;
+    height: 22px;
+    text-align: center;
+  }
+  #search2 span {
+    font-size: 3em;
+    color: white;
+  }
+  #search2 span:hover {
+    font-size: 3em;
+    color: blue;
+    cursor: pointer;
+  }
+  #search2 span:active {
+    font-size: 3em;
+    color: rgb(66, 66, 168);
+    cursor: pointer;
+  }
+  #search2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 66px;
+    left: calc(50% - 25px);
+  }
+  /* Tem5 */
+  
+  .contentEvo {
+    width: 95%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .contentEvo img {
+    width: calc(30px * var(--imgScale));
+  
+    height: auto;
+  }
+  
+  .contentEvo h3 {
+    font-size: calc(0.75em * var(--imgScale));
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  .contentEvo p {
+    font-size: calc(0.5em * var(--imgScale));
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  /* tem6 */
+  
+  .contenedorDesc {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+  }
+  .contenedorDesc h2 {
+    align-self: center;
+    font-size: 1.2em;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedorDesc p {
+    text-align: justify;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ------------------------------------------------------ */
+  
+  /* Botones  */
+  #Power {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 444px;
+    left: 66px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  #Power span {
+    color: white;
+  }
+  #Power span:hover {
+    color: blue;
+  }
+  
+  .b1 {
+    background-color: rgba(49, 167, 241, 255);
+    width: 54px;
+    height: 38px;
+  }
+  .buttonContenedor1 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 346px;
+    left: 542px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 5px;
+  }
+  
+  /* ---------------- */
+  /* Botones de flecha */
+  .buttonContenedor2 {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 465px;
+    left: 541px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .b2 {
+    width: 55px;
+    height: 40px;
+  }
+  .b2 span,
+  .b3 span {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -4px;
+  }
+  .b2 .material-icons-outlined {
+    color: var(--fcolor);
+  }
+  /* ----------------------------------- */
+  .pokeEvo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .pokeContenedor {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 485px) {
+    .pokeContenedor2 {
+      position: absolute;
+      width: 360px;
+      height: 800px;
+      /* min-height: 100rem; */
+      background-image: url(./assets/images/kanto_pokedex2.svg);
+      background-size: 90%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: 10px;
+      /* left: 50%;
+      transform: translate(-50%,0%); */
+      display: flex;
+      user-select: none;
+    }
+  
+    .lamp {
+      width: 229px;
+      height: 194px;
+      position: relative;
+      top: 5.1%;
+      left: 19.4%;
+      border-radius: 7px;
+    }
+  
+    #altura {
+      font-size: 0.8em;
+      position: relative;
+      top: 752px;
+      left: 91px;
+      height: 30px;
+      width: auto;
+    }
+    #peso {
+      font-size: 0.8em;
+      position: relative;
+      top: 722px;
+      left: 196px;
+      height: 30px;
+      width: auto;
+    }
+    #Power {
+      width: 34px;
+      height: 33px;
+      position: absolute;
+      top: 37.3%;
+      left: 13%;
+      border-radius: 50%;
+      background-color: black;
+    }
+    #Power span {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      align-items: center;
+      align-content: center;
+    }
+    .buttonContenedor1 {
+      width: auto;
+      height: 54px;
+      position: absolute;
+      top: 78%;
+      left: 25.2%;
+      row-gap: 0;
+      border-top-right-radius: 5px;
+    }
+    .b1 {
+      width: 36px;
+      height: 26px;
+    }
+    .b1 span {
+      /* left: 50%;
+          transform: translate(-50%, 0); */
+      font-size: 1.2em;
+    }
+    .contentInfo {
+      width: 188px;
+      height: 88px;
+      top: 65%;
+      left: 24%;
+    }
+    #searchPoke {
+      font-size: 0.5em;
+      position: relative;
+      top: 10px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 147px;
+      height: 13px;
+      text-align: center;
+    }
+    #search2 {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      top: 37px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .contenedorDesc h2 {
+      font-size: 1em;
+    }
+    .contenedorDesc p {
+      font-size: 0.7em;
+    }
+    .datos {
+      font-size: 0.6em;
+      row-gap: 5px;
+    }
+    .grafico1 {
+      width: 100%;
+      height: 67%;
+      position: relative;
+      top: 18px;
+      left: 0px;
+      overflow: hidden;
+    }
+  
+    .buttonContenedor2 {
+      position: fixed;
+      top: 703px;
+      left: 91px;
+    }
+    .b2 {
+      width: 37px;
+      height: 27px;
+    }
+    .b2 span {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .pokeEvo {
+      margin-left: 0.45%;
+      margin-right: 0.45%;
+    }
+  
+    .contentEvo img {
+      width: calc(25px * var(--imgScale));
+      height: auto;
+    }
+  }
+  

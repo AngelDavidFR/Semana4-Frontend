@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+
+    <main class="pokeContenedor2">
+
+      <div class="caratulaContenedor"></div>
+
+      <div class="contentInfo"></div>
+
+      <button id="Power">
+        <span class="material-icons-outlined">power_settings_new</span>
+      </button>
+      
+      <div class="buttonContenedor1">
+        <button class="b1" id="b1">
+          <span class="material-icons-outlined">search</span>
+        </button>
+        <button class="b1" id="b2">
+          <span class="material-icons-outlined">info</span>
+        </button>
+        <button class="b1" id="b3">
+          <span class="material-icons-outlined">bar_chart</span>
+        </button>
+        <button class="b1" id="b4">
+          <span class="material-icons-outlined">change_circle</span>
+        </button>
+        <button class="b1" id="b5">
+          <span class="material-icons-outlined"> description</span>
+        </button>
+        <button class="b1" id="b6"></button>
+        <button class="b1" id="b7"></button>
+        <button class="b1" id="b8"></button>
+        <button class="b1" id="b9"></button>
+        <button class="b1" id="b10"></button>
+      </div>
+
+      <div class="buttonContenedor2">
+        <button class="b2" id="b11">
+          <span class="material-icons-outlined">arrow_left</span>
+        </button>
+        <button class="b2" id="b12">
+          <span class="material-icons-outlined">arrow_right</span>
+        </button>
+      </div>
+
+
+    </main>
+    <template id="tem1">
+      <div class="grafico1">
+        <canvas id="Graf1"></canvas>
+      </div>
+    </template>
+
+    <template id="tem2">
+      <div class="datos">
+        <div class="datos2">
+          <h3>Tipo:</h3>
+          <p id="type1"></p>
+          <p id="type2"></p>
+        </div>
+        <h3> Habilidades:</h3>
+        <p id="hab"></p>
+        <h3>Experiencia:</h3>
+        <p id="xp"></p>
+        <h3> Habitat:</h3>
+        <p id="habt"></p>
+      </div>
+    </template>
+
+    <template id="tem3">
+      <input type="text" id="searchPoke" placeholder="Buscar Pokemom por Nombre o ID">
+      <div id="search2">
+        <span class="material-icons-outlined buscar1">travel_explore</span>
+      </div>
+    </template>
+
+    <template id="tem4">
+      <div class="fisicDatos">
+        <div id="altura" class="carat1">
+          <h3 id="altura1">Altura:</h3>
+          <p id="altura2"></p>
+        </div>
+        <div id="peso" class="carat1">
+          <h3 id="peso1">Peso:</h3>
+          <p id="peso2"></p>
+        </div>
+      </div>
+      <div class="lamp" id="back1">
+        <img src="./assets/images/pokeball.svg" alt="" class="pokeImg">
+        <div class="id1">
+          <p></p>
+        </div>
+      </div>
+    </template>
+
+    <template id="tem5">
+      <div class="contentEvo"></div>
+    </template>
+    <template id="tem6">
+      <div class="contenedorDesc">
+        <h2 class="Tdesc" id="Tds1"></h2>
+        <p class="Tsobre" id="Tnn1"></p>
+      </div>
+    </template>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>
