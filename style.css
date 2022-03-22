@@ -446,7 +446,15 @@
       left: 51%;
       transform: translate(-50%, -50%);
     }
-  
+    .id1 {
+      position: absolute;
+      width: 350px;
+      top: 79%;
+      left: 8%;
+      height: 25px;
+      font-size: 0.7em;
+      color: black;
+  }
     #altura {
       font-size: 0.8em;
       position: relative;
