@@ -431,12 +431,20 @@
     }
   
     .lamp {
-      width: 229px;
-      height: 194px;
+      width: 191px;
+      height: 153px;
       position: relative;
-      top: 5.1%;
-      left: 19.4%;
+      top: 7.1%;
+      left: 33.4%;
       border-radius: 7px;
+    }
+    .lamp img{
+      width: auto;
+      height: 104px;
+      position: relative;
+      top: 39%;
+      left: 51%;
+      transform: translate(-50%, -50%);
     }
   
     #altura {
@@ -505,7 +513,10 @@
       height: 13px;
       text-align: center;
       color: white;
+      background-color: white;
+      
     }
+    
     #search2 {
       position: relative;
       width: 50px;
