@@ -1,2 +1,4 @@
 # Semana4-Frontend
-Practica pokedex
+## Practica pokedex
+### Descripción pokedex
+<img src="./info.png" width="500px">
